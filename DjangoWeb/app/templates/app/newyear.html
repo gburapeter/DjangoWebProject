@@ -1,0 +1,26 @@
+
+{% extends "app/layout.html" %}
+
+{% block head %}
+
+   
+    <title>NewYear</title>
+      {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/styles.css' %}" />
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+   <h1> {{ boolean }} </h1> 
+    <ul>
+           {% for task in tasks %}
+                <li>{{ task }}</li>
+           {% endfor %}
+     </ul>
+
+
+{% endblock %}

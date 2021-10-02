@@ -1,0 +1,42 @@
+table{
+    background-color:black;
+}
+
+
+.scoreboardTable {
+    padding: 0;
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.scoreboardTableHeaderRow {
+    color: darkviolet;
+    font-weight: bold;
+    height: 50px;
+    
+}
+
+.scoreboardTableBodyRow:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.050);
+}
+
+#latestUserScore {
+    background-color: crimson;
+}
+
+.scoreboardTableBodyRow:hover {
+    background-color: darkviolet;
+}
+
+.scoreboardTable tr td {
+    height: 25px;
+}
+
+.scoreboardTable th {
+    
+    text-align: center;
+}
+

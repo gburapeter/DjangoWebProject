@@ -1,0 +1,27 @@
+
+
+{% extends "app/layout.html" %}
+
+{% block head %} 
+{% load staticfiles %}
+ <script src="{% static 'app/scripts/crypto.js' %}"></script>
+
+
+{% endblock %}
+
+{% block content %}
+    <body>
+         <h1 id="resultcrypto">Result</h1>
+        <div id="icon"></div>
+        <img id="kep" />
+
+         <input id="textcrypto" placeholder="Currency" type="text">
+
+        <button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+</button>
+
+        
+
+    </body>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "app/layout.html" %}
+
+
+{% block head %}
+
+
+<title>NewYear</title>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/styles.css' %}" />
+
+{% endblock %}
+
+
+{% block content %}
+{% include "app/flight.html" %}
+
+{% endblock %}
+
+

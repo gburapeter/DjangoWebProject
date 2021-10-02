@@ -1,0 +1,19 @@
+{% extends "app/layout.html" %}
+
+
+{% block head %}
+
+
+<title>NewYear</title>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/Chess.css' %}" />
+ <script src="{% static 'app/scripts/Chess.js' %}"></script>
+ <script src="{% static 'app/scripts/test.js' %}"></script>
+
+{% endblock %}
+
+
+{% block content %}
+<div id="chessboard"></div>
+
+{% endblock %}

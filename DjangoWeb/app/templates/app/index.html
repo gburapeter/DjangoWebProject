@@ -1,0 +1,33 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Django</h1>
+    <p class="lead">This project was made with the help of Django/Python tutorial, and many Javascript/HTML/CSS techniques were used.</p>
+    <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Django's website &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Betting</h2>
+        <p>Go to this site, select your preferred sport and league, and you'll get all the info you need about the upcoming matches</p>
+        <p><a class="btn btn-default"  href="{% url 'betting' %}">Go to Bets &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Crypto infos</h2>
+        <p>This page lets you know the current prices of the top 100 coins.</p>
+        <p><a class="btn btn-default"  href="{% url 'crypto' %}">Go to crypto &raquo;</a></p>
+    </div>
+    
+    <div class="col-md-4">
+        <h2>Currency exchange</h2>
+        <p>
+            Go to this page, if you wanna find out how much your currency equals to in EUR.
+        </p>
+        <p><a class="btn btn-default"  href="{% url 'currency' %}">Go to exchange &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
+

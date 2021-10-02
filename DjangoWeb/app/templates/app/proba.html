@@ -1,0 +1,21 @@
+
+{% extends "app/layout.html" %}
+
+{% block head %} 
+{% load staticfiles %}
+ <script src="{% static 'app/scripts/tasks.js' %}"></script>
+
+{% endblock %}
+
+{% block content %}
+  <body>
+        <h1>Tasks</h1>
+        <ul id="tasks"></ul>
+        <form>
+            <input id="task" placeholder = "New Task" type="text">
+            <input id="submit" type="submit">
+        </form>
+    </body>
+{% endblock %}
+
+

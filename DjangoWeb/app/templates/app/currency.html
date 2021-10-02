@@ -1,0 +1,18 @@
+
+
+{% extends "app/layout.html" %}
+
+{% block head %} 
+{% load staticfiles %}
+ <script src="{% static 'app/scripts/currency.js' %}"></script>
+
+{% endblock %}
+
+{% block content %}
+    <body>
+        <h1 id="resultcurr">Result</h1>
+
+         <input id="textinput" placeholder="Currency" type="text">
+
+    </body>
+{% endblock %}
